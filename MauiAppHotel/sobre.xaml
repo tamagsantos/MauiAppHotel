@@ -4,38 +4,46 @@
              x:Class="MauiAppHotel.sobre"
              Title="sobre"
              NavigationPage.HasNavigationBar="False"
-             BackgroundColor="{StaticResource  Secondary}">
+             BackgroundColor="{StaticResource    Secondary}">
             
    
     <VerticalStackLayout VerticalOptions="CenterAndExpand">
            <Label Text=" Sobre o Projeto "
             FontFamily="PacificoRegular "
+            FontAttributes="Bold"
             FontSize="35"
-            TextColor="{ StaticResource OffBlack }"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+            TextColor="{ StaticResource  Primary }"
+            VerticalOptions="Center"    
+            HorizontalOptions="CenterAndExpand"/>
 
-     <Frame Padding="08">
+
+            <Frame Padding="10">
             <VerticalStackLayout>
-                <Label Grid.Row="0" Grid.Column="1"
-                       FontSize="20"
-                       HorizontalOptions="Center"/>
+               <Label Text="Desenvolvido por:  
+                      Tamara Gonçalves"
+                FontSize="20"
+                FontAttributes="Bold"
+                HorizontalOptions="Fill"/>
 
-                <Label Text="Desenvolvido por:   
-                       Tamara Gonçalves"
-                       FontSize="20"
-                       HorizontalOptions="Fill"/>
-
-                <Label Text="Ano de Desenvolvimento: 2024 "
-                       FontSize="20"
-                       HorizontalOptions="Fill"/>
-
-                <Button Text=" Voltar"
-                        Clicked="Button_Clicked" />
-
-
-            </VerticalStackLayout>
-     </Frame>
+                
             
-     </VerticalStackLayout>
+            </VerticalStackLayout>
+         
+     </Frame>
+        
+            <Frame Padding="10">
+                <Label Text="Ano de Desenvolvimento: 2024"
+                 FontSize="18"
+                 FontAttributes="Bold" TextColor="DarkGreen"
+                 HorizontalOptions="Fill"/>
+            </Frame>
+        
+            <Button Text=" Voltar"
+                    FontSize="15"
+                    FontAttributes="Bold" 
+                    BackgroundColor="DarkOrange"
+                    BorderWidth="5"
+                    Clicked="Button_Clicked" />
+        
+            </VerticalStackLayout>
 </ContentPage>

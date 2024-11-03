@@ -72,8 +72,15 @@
                     </VerticalStackLayout>
                 </Frame>
 
-                <Button Text=" Avançar "/>
+                <Button Text=" Avançar "
+                        FontAttributes="Bold"
+                        FontSize="15"
+                        BorderWidth="5"/>
+                
                 <Button Text=" Sobre " 
+                        FontAttributes="Bold" 
+                        FontSize="15"
+                        BorderWidth="5"
                         Clicked="Button_Clicked"
                         BackgroundColor="DarkOrange"/>
 
