@@ -24,9 +24,6 @@
                 FontSize="20"
                 FontAttributes="Bold"
                 HorizontalOptions="Fill"/>
-
-                
-            
             </VerticalStackLayout>
          
      </Frame>
