@@ -4,15 +4,15 @@
              x:Class="MauiAppHotel.sobre"
              Title="sobre"
              NavigationPage.HasNavigationBar="False"
-             BackgroundColor="{StaticResource    Secondary}">
+             BackgroundColor="{StaticResource Secondary}">
             
    
     <VerticalStackLayout VerticalOptions="CenterAndExpand">
-           <Label Text=" Sobre o Projeto "
+           <Label Text=" Sobre o Projeto"
             FontFamily="PacificoRegular "
             FontAttributes="Bold"
-            FontSize="35"
-            TextColor="{ StaticResource  Primary }"
+            FontSize="40"
+            TextColor="{ StaticResource Primary }"
             VerticalOptions="Center"    
             HorizontalOptions="CenterAndExpand"/>
 
@@ -20,20 +20,27 @@
             <Frame Padding="10">
             <VerticalStackLayout>
                <Label Text="Desenvolvido por:  
-                      Tamara Gonçalves"
+                      Tamara Gonçalves 
+                      (Estudante do Centro Paula Souza - EADTEC)"
                 FontSize="20"
                 FontAttributes="Bold"
                 HorizontalOptions="Fill"/>
             </VerticalStackLayout>
          
-     </Frame>
+            </Frame>
         
             <Frame Padding="10">
-                <Label Text="Ano de Desenvolvimento: 2024"
-                 FontSize="18"
+           
+                <Label Text="Ano de Desenvolvimento: 2024
+                       
+                        Projeto Teste de App (modelo C#) para uma Contratação de Hospedagem de Hotel."
+                 FontSize="16"
                  FontAttributes="Bold" TextColor="DarkGreen"
                  HorizontalOptions="Fill"/>
-            </Frame>
+           
+              
+
+        </Frame>
         
             <Button Text=" Voltar"
                     FontSize="15"

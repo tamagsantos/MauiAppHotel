@@ -4,15 +4,15 @@
              x:Class="MauiAppHotel.Views.ContratacaoHospedagem"
              Title="ContratacaoHospedagem"
              NavigationPage.HasNavigationBar="False"
-             BackgroundColor="{StaticResource  Secondary}">
+             BackgroundColor="BlanchedAlmond">
 
     <VerticalStackLayout VerticalOptions="CenterAndExpand"
                          Padding="10">
         <Label 
             Text="Cálculo da Diária"
-            FontFamily="PacificoRegular"
-            FontSize="40"
-            TextColor="{ StaticResource Primary }"
+            FontFamily="SourGummyExBold"
+            FontSize="30"
+            TextColor="{ StaticResource  Tertiary }"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
         <Frame Padding="10">
@@ -21,7 +21,8 @@
                       ColumnDefinitions="*, *, 2*">
 
                     <Label Grid.Row="0" Grid.Column="0"
-                           Text="Adultos: "/>
+                           Text="Adultos: "
+                           FontFamily="OpenSansSemibold"/>
 
                     <Label Grid.Row="0" Grid.Column="1"
                            TextColor="{StaticResource Primary}"
@@ -35,7 +36,8 @@
                              Increment="1"/>
 
                     <Label Grid.Row="1" Grid.Column="0"
-                           Text="Crianças: " />
+                           Text="Crianças: "
+                           FontFamily="OpenSansSemibold"/>
 
                     <Label Grid.Row="1" Grid.Column="1"
                            TextColor="{StaticResource Tertiary}"
@@ -49,25 +51,36 @@
                              Increment="1"/>
                 </Grid>
 
-                <Label Text=" Escolha sua Suíte"/>
+                <Label Text=" Escolha sua Suíte"
+                       TextColor="Coral"
+                       FontFamily="OpenSansSemibold"/>
                 
                 <Picker x:Name="pck_quarto"
-                        Title=" Selecione sua Acomodação"/>
+                        Title=" Selecione sua Acomodação"
+                        FontFamily="OpenSansSemibold"
+                        ItemDisplayBinding="{Binding Descricao}"/>
 
                 <Frame Padding="10"
                        Margin="10">
                     <VerticalStackLayout>
-                        <Label Text=" Período da Estadia"/>
+                        <Label Text=" Período da Estadia"
+                               TextColor="Coral"
+                               FontFamily="OpenSansSemibold"/>
                         <HorizontalStackLayout>
-                            <Label Text=" Check-in"/>
+                            <Label Text=" Check-in"
+                                   FontFamily="OpenSansSemibold"/>
                             <DatePicker x:Name="dtpck_checkin"
-                                        Format="dd/MM/yyyy"/>
+                                        DateSelected="dtpck_checkin_DateSelected"
+                                        Format="dd/MM/yyyy"
+                                        FontFamily="OpenSansSemibold"/>
                         </HorizontalStackLayout>
 
                         <HorizontalStackLayout>
-                            <Label Text="Check-out"/>
+                            <Label Text="Check-out"
+                                   FontFamily="OpenSansSemibold"/>
                             <DatePicker x:Name="dtpk_checkout"
-                                        Format="dd/MM/yyyy"/>
+                                        Format="dd/MM/yyyy"
+                                        FontFamily="OpenSansSemibold"/>
                         </HorizontalStackLayout>
                     </VerticalStackLayout>
                 </Frame>
@@ -75,7 +88,9 @@
                 <Button Text=" Avançar "
                         FontAttributes="Bold"
                         FontSize="15"
-                        BorderWidth="5"/>
+                        BorderWidth="5"
+                        Clicked="Button_Clicked"
+                        BackgroundColor="{StaticResource Tertiary}"/>
                 
                 <Button Text=" Sobre " 
                         FontAttributes="Bold" 

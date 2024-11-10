@@ -62,6 +62,10 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Fonts\Pacifico-Regular.ttf" />
+	  <None Remove="Resources\Fonts\SourGummy_Expanded-Black.ttf" />
+	  <None Remove="Resources\Fonts\SourGummy_Expanded-BlackItalic.ttf" />
+	  <None Remove="Resources\Fonts\SourGummy_Expanded-Bold.ttf" />
+	  <None Remove="Resources\Fonts\SourGummy_Expanded-BoldItalic.ttf" />
 	</ItemGroup>
 
 	<ItemGroup>

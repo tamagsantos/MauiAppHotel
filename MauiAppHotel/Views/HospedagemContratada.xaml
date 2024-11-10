@@ -2,11 +2,72 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiAppHotel.Views.HospedagemContratada"
-             Title="HospedagemContratada">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="BlanchedAlmond" >
+    
+    <VerticalStackLayout VerticalOptions="CenterAndExpand">
+        <Label Text="Suíte Super Luxo"
+           TextColor="{StaticResource Tertiary}"
+           FontFamily="SourGummyExBold"
+           FontSize="30"
+           HorizontalTextAlignment="Center"/>
+
+        <Frame Margin="10">
+            <HorizontalStackLayout>
+                <Label Text="Adultos:  "
+                       FontFamily="OpenSansSemibold"/>
+                <Label Text=" 2 " TextColor="Coral"
+                       FontFamily="OpenSansSemibold"/>
+
+                <HorizontalStackLayout>
+                    <Label Text=" Crianças: "
+                           FontFamily="OpenSansSemibold"/>
+                    <Label Text=" 1 "  TextColor="Coral"
+                           FontFamily="OpenSansSemibold"/>
+                </HorizontalStackLayout>
+             </HorizontalStackLayout>
+        </Frame>
+
+        <Frame Margin="10">
+            <Grid ColumnDefinitions="*, *, *"
+                  RowDefinitions="Auto, Auto">
+                <Label Grid.Row="0" Grid.Column="0" Text=" Check-in: "
+                       FontFamily="OpenSansSemibold"/>
+                <Label Grid.Row="0" Grid.Column="1" Text=" Check-out"
+                       FontFamily="OpenSansSemibold"/>
+                <Label Grid.Row="0" Grid.Column="2" Text=" Estadia: "
+                       FontFamily="OpenSansSemibold"/>
+
+                <Label Grid.Row="1" Grid.Column="0" Text="27/05/2024"
+                       TextColor="Coral"
+                       FontFamily="OpenSansSemibold"/>
+                <Label Grid.Row="1" Grid.Column="1" Text="30/05/2024"
+                       TextColor="Coral"
+                       FontFamily="OpenSansSemibold"/>
+                <Label Grid.Row="1" Grid.Column="2" Text="3"
+                       TextColor="Coral"
+                       FontFamily="OpenSansSemibold"
+                       HorizontalTextAlignment="Center"/>
+            </Grid>
+        </Frame>
+
+        <Frame Margin="10">
+            <HorizontalStackLayout>
+                <Label Text="Valor Total: "
+                       FontFamily="OpenSansSemibold"/>
+                <Label Text=" R$750,00"
+                       TextColor="Coral"
+                       FontFamily="OpenSansSemibold"/>
+            </HorizontalStackLayout>
+        </Frame>
+
+        <Button Text="Voltar"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+                BorderWidth="5"
+                Clicked="Button_Clicked"
+                Background="{StaticResource Tertiary}"/>
+        
     </VerticalStackLayout>
+    
 </ContentPage>
