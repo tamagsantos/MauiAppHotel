@@ -22,7 +22,7 @@ namespace MauiAppHotel
             },
             new Quarto()
             {
-                Descricao = " Suíte Primer",
+                Descricao = "Suíte Primer",
                 ValorDiariaAdulto = 65.0,
                 ValorDiariaCrianca = 30.0
             },
@@ -31,6 +31,14 @@ namespace MauiAppHotel
                 Descricao = "Suíte Economic",
                 ValorDiariaAdulto = 48.5,
                 ValorDiariaCrianca = 20.0
+            },
+            new Quarto()
+            {
+                Descricao = "Suíte Incluso PlayGound",
+                ValorDiariaAdulto = 95.0,
+                ValorDiariaCrianca = 55.0,
+                ValorPlaygound = 30.0
+
             }
         };
 

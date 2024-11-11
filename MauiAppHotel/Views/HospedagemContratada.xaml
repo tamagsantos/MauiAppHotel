@@ -22,7 +22,7 @@
                 <HorizontalStackLayout>
                     <Label Text=" Crianças: "
                            FontFamily="OpenSansSemibold"/>
-                    <Label Text=" 1 "  TextColor="Coral"
+                    <Label Text=" 2 "  TextColor="Coral"
                            FontFamily="OpenSansSemibold"/>
                 </HorizontalStackLayout>
              </HorizontalStackLayout>
@@ -38,13 +38,13 @@
                 <Label Grid.Row="0" Grid.Column="2" Text=" Estadia: "
                        FontFamily="OpenSansSemibold"/>
 
-                <Label Grid.Row="1" Grid.Column="0" Text="27/05/2024"
+                <Label Grid.Row="1" Grid.Column="0" Text="10/11/2024"
                        TextColor="Coral"
                        FontFamily="OpenSansSemibold"/>
-                <Label Grid.Row="1" Grid.Column="1" Text="30/05/2024"
+                <Label Grid.Row="1" Grid.Column="1" Text="15/11/2024"
                        TextColor="Coral"
                        FontFamily="OpenSansSemibold"/>
-                <Label Grid.Row="1" Grid.Column="2" Text="3"
+                <Label Grid.Row="1" Grid.Column="2" Text="5"
                        TextColor="Coral"
                        FontFamily="OpenSansSemibold"
                        HorizontalTextAlignment="Center"/>
@@ -55,7 +55,7 @@
             <HorizontalStackLayout>
                 <Label Text="Valor Total: "
                        FontFamily="OpenSansSemibold"/>
-                <Label Text=" R$750,00"
+                <Label Text=" R$850,00"
                        TextColor="Coral"
                        FontFamily="OpenSansSemibold"/>
             </HorizontalStackLayout>
